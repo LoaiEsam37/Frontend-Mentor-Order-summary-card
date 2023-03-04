@@ -109,7 +109,7 @@ body {
     padding-bottom: var(--space-between-elements);
     border-radius: 10px;
     position: relative;
-    box-shadow: 0 23px 44px 19px #dcd9f8;
+    box-shadow: 0 23px 44px 10px #dcd9f8;
     margin-top: var(--space-between-elements);
 
 }
