@@ -48,6 +48,8 @@ body {
     color: var(--text-color);
     padding-top: var(--space-between-elements);
     padding-bottom: var(--space-between-elements);
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 
