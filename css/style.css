@@ -1,0 +1,157 @@
+:root {
+    --body-background-color: #e0e8ff;
+    --success-button-color: #382ae1;
+    --plan-background-color: #f8f9fe;
+    --text-color: #7f8699;
+    --card-background-color: #ffffff;
+    --space-between-elements: 45px;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    background-color: var(--body-background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 500px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--card-background-color);
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0 23px 44px 19px #dcd9f8;
+}
+
+.card__container--image,
+.card__container--content {
+    flex: 50%;
+}
+
+.card__wrapper--image img {
+    width: 100%;
+    height: 100%;
+}
+
+.card__wrapper--content {
+    padding: 40px;
+    text-align: center;
+}
+
+.card_paragraph {
+    color: var(--text-color);
+    padding-top: var(--space-between-elements);
+    padding-bottom: var(--space-between-elements);
+}
+
+
+.card__plan {
+    background-color: var(--plan-background-color);
+    position: relative;
+    height: 80px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    padding-bottom: var(--space-between-elements);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card__plan--icon {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.card__plan--price {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    left: 90px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.card__plan--price span:nth-child(1) {
+    font-weight: 700;
+}
+
+.card__plan--price span:nth-child(2) {
+    color: var(--text-color);
+}
+
+.card__plan a {
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.card__accept--button {
+    background-color: var(--success-button-color);
+    height: 50px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    padding-bottom: var(--space-between-elements);
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 23px 44px 19px #dcd9f8;
+    margin-top: var(--space-between-elements);
+
+}
+
+.card__accept--button a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+}
+
+.card__decline--button {
+    position: relative;
+    margin-top: var(--space-between-elements);
+}
+
+.card__decline--button a {
+    text-decoration: none;
+    color: var(--text-color);
+    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+}
+
+@media (max-width: 650px) {
+    .card {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 440px) {
+    .card__plan {
+        width: 100%;
+    }
+
+    .card__accept--button {
+        width: 100%;
+    }
+}
